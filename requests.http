@@ -1,0 +1,34 @@
+###
+# Requisicao GET para listar todos
+GET http://localhost:8080/
+
+###
+# Reuisicao GET para listar detalhes de 1 registro
+GET http://localhost:8080/detalhes/1
+
+###
+# Requisicao POST para cadastrar um novo contato
+POST  http://localhost:8080/adicionar
+Content-Type: application/json
+
+{
+    "nome" : "Gustavo",
+    "tipo" : "Comercial",
+    "telefone" : "5555-3232"
+}
+
+###
+# Requisicao POST para editar um contato
+POST http://localhost:8080/adicionar
+Content-Type: application/json
+
+{
+    "id" : 3,
+    "nome" : "Creusa",
+    "tipo" : "Residencial",
+    "telefone" : "9999-3333"
+}
+
+###
+# Requisicao Get para deletar um contato
+GET http://localhost:8080/deletar/
